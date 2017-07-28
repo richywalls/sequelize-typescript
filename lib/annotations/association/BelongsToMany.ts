@@ -20,7 +20,7 @@ export function BelongsToMany(relatedClassGetter: ModelClassGetter,
     through = throughOrOptions;
   } else {
     through = (throughOrOptions as IAssociationOptionsBelongsToMany).through;
-    options = throughOrOptions;
+    options = throughOrOptions as Partial<IAssociationOptionsBelongsToMany>;
   }
   return (target: any, propertyName: string) => {
     addAssociation(

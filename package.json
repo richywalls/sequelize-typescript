@@ -32,7 +32,7 @@
   "dependencies": {
     "@types/node": "6.0.41",
     "@types/reflect-metadata": "0.0.4",
-    "@types/sequelize": "4.0.60",
+    "@types/sequelize": "^4.0.67",
     "es6-shim": "0.35.3"
   },
   "devDependencies": {
@@ -63,7 +63,7 @@
     "sqlite3": "3.1.8",
     "ts-node": "3.0.4",
     "tslint": "4.3.1",
-    "typescript": "2.2.1",
+    "typescript": "^2.4.2",
     "uuid-validate": "0.0.2"
   },
   "engines": {

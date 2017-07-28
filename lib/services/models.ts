@@ -220,7 +220,7 @@ export function resolveScopes(models: Array<typeof Model>): void {
     if (options) {
       Object
         .keys(options)
-        .forEach(key => resolveScope(key, model, options[key]));
+        .forEach(key => resolveScope(key, model, <IScopeFindOptions | undefined>options[key]));
     }
   });
 }

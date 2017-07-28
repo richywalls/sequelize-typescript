@@ -39,7 +39,6 @@ function annotate(target: any,
       type: optionsOrDataType as DataTypeAbstract
     };
   } else {
-    //for TS 2.4 type assertion is needed, see https://gist.github.com/DanielRosenwasser/f5e7cbee0241b8edc1830233b160b46c#weak-types
     options = Object.assign({}, optionsOrDataType) as IPartialDefineAttributeColumnOptions;
 
     if (!options.type) {
